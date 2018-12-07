@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/linear_tab">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/page_userinfo"
+                android:gravity="center"
+                android:visibility="gone">
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/page_wordlist"
+                android:gravity="center"
+                android:visibility="gone">
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/page_home"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:visibility="visible">
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+            android:id="@+id/linear_tab"
+            android:orientation="horizontal"
+            android:layout_width="320dp"
+            android:layout_alignParentBottom="true"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true">
+
+        <Button android:layout_width="48dp" android:layout_height="48dp" android:background="#ccccff" android:layout_marginRight="80dp"
+                android:layout_marginTop="6dp" android:id="@+id/bt_tab_home" android:layout_marginLeft="8dp"/>
+
+        <Button
+                android:layout_width="48dp" android:background="#ccccff"
+                android:layout_height="48dp" android:id="@+id/bt_tab_wordlist" android:layout_marginTop="6dp" />
+
+        <Button
+                android:layout_width="48dp" android:background="#ccccff" android:layout_marginLeft="80dp" android:layout_marginRight="8dp"
+                android:layout_height="48dp" android:id="@+id/bt_tab_userinfo" android:layout_marginTop="6dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
