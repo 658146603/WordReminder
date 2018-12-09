@@ -29,8 +29,8 @@ public class MainActivity extends Activity implements View.OnClickListener{
         bt_tab[0].setOnClickListener(this);
         bt_tab[1].setOnClickListener(this);
         bt_tab[2].setOnClickListener(this);
-        Intent intent=new Intent(MainActivity.this, WelcomeActivity.class);
-        startActivity(intent);
+        startActivity(new Intent(MainActivity.this, WelcomeActivity.class));
+        startService(new Intent(this, MakeNotificationService.class));
 
     }
 

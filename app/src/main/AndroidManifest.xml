@@ -37,6 +37,12 @@
                 android:label="@string/title_activity_register"
                 android:theme="@style/AppTheme.NoActionBar">
         </activity>
+
+        <service
+                android:name=".MakeNotificationService"
+                android:enabled="true"
+                android:exported="true">
+        </service>
     </application>
 
 </manifest>
